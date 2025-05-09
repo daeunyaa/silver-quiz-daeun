@@ -89,4 +89,10 @@ body{
         display: flex;
         flex-direction: column;
     }
+    .modal{
+        width: 80%;
+        height: auto;
+        top: 30%;
+        padding: 2em 1em;
+    }
 }
