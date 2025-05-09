@@ -1,0 +1,92 @@
+body{
+    font-family: "Jua", sans-serif;
+    border: 10px solid #b7410e;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    color: #1a0f09;
+    position: relative;
+    font-size: 1.5rem;
+}
+.quiz{
+    background:#F9EFE5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+}
+.quiz button{
+    background: #D94A27;
+    color: #F9EFE5;
+    border: none;
+    border-radius: 5px;
+    width: 10em;
+    height: 3em;
+    font-size: 1.25rem;
+    margin-top:2em; 
+}
+.modal{
+    display: none;
+    background: #e29c6d;
+    width: 30em;
+    height: 20em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.modal p{
+    color: black;
+    text-align: center;
+    font-size: 2em;
+    font-weight: border;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gift{
+    display: none;
+    padding-top: 3em;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info button{
+    background: #D94A27;
+    color: #F9EFE5;
+    border: none;
+    border-radius: 5px;
+    width: 10em;
+    height: 3em;
+}
+.gift p{
+    font-size: 1.5rem;
+}
+.highlight{
+    background: linear-gradient(to top, #ffea00 50%, transparent 50%);
+    font-weight: bold;
+    padding: 0 4px;
+    border-radius: 2px;
+    animation: highlightFadeIn 1s ease-out forwards;
+    opacity: 0;
+}
+@keyframes highlightFadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  @media(max-width: 1200px){
+    body{
+        width: 100vw;
+    }
+    .quiz{
+        display: flex;
+        align-items: start;
+    }
+    .input{
+        display: flex;
+        flex-direction: column;
+    }
+}
